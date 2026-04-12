@@ -1,0 +1,18 @@
+
+services:
+  server:
+    image: alpine:latest
+    container_name: echo_server
+    command: ["sh", "-c", "echo server container ready && sleep infinity"]
+
+  client:
+    image: alpine:latest
+    container_name: echo_client
+    depends_on:
+      - server
+    command: ["sh", "-c", "echo client container ready && sleep infinity"]
+
+  attacker:
+    image: alpine:latest
+    container_name: echo_attacker
+    command: ["sh", "-c", "echo attacker container ready && sleep infinity"]
