@@ -1,27 +1,24 @@
 # Hardened Echo Server
 
-## Project Summary
-This project demonstrates how a simple echo server can be insecure when using plaintext communication and how it can be improved using basic security protections.
-
-The project compares an insecure echo server with a hardened version that includes:
-- TLS encryption
-- input validation
-- logging
-- rate limiting
-
-## Goals
-- Show how plaintext traffic can be captured
-- Harden the service against interception and abuse
-- Provide a reproducible Docker-based setup and evaluation process
-
-## Repository Structure
-- `src/` - source code for client and server
-- `scripts/` - helper scripts for capture and demo runs
-- `pcaps/` - packet captures for evaluation
-- `docs/` - proposal and final report files
+## Description
+CECS 478 final project demonstrating a secure echo server with TLS, input validation, logging, and rate limiting.
 
 ## Setup
-Build the project with:
 
-```bash
-make bootstrap
+Build:
+docker compose build
+
+Run:
+docker compose up
+
+Stop:
+docker compose down
+
+## Project Structure
+- src/ - source code
+- scripts/ - helper scripts
+- pcaps/ - packet captures
+- docs/ - reports
+
+## Project Board
+https://github.com/2handzxd/cecs478-hardened-echo-server/projects
