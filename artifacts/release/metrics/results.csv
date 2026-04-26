@@ -1,0 +1,5 @@
+metric,value
+valid_messages,2
+rejected_messages,2
+rate_limited_events,1
+tls_enabled,True
