@@ -15,6 +15,8 @@ The system runs entirely inside Docker and includes:
 - CI pipeline
 
 ---
+## 🎥 Demo Video
+See: docs/demo.mp4
 
 ## ⚙️ Quick Start (Required)
 
@@ -22,6 +24,3 @@ From a fresh clone:
 
 ```bash
 make up && make demo
-
-## 🎥 Demo Video
-See: docs/demo.mp4
