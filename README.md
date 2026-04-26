@@ -22,3 +22,6 @@ From a fresh clone:
 
 ```bash
 make up && make demo
+
+## 🎥 Demo Video
+See: docs/demo.mp4
