@@ -1,24 +1,24 @@
-# Hardened Echo Server
+# 🔐 Hardened Echo Server
 
-## Description
-CECS 478 final project demonstrating a secure echo server with TLS, input validation, logging, and rate limiting.
+## 📌 Overview
+This project implements a **secure and observable echo server** for CECS 478.
 
-## Setup
+It demonstrates a full end-to-end pipeline:
 
-Build:
-docker compose build
+echo → validate → rate limit → log → export metrics
 
-Run:
-docker compose up
+The system runs entirely inside Docker and includes:
+- Security hardening (input validation + rate limiting)
+- Observability (logs + metrics)
+- Packet capture (PCAP evidence)
+- Automated testing with coverage
+- CI pipeline
 
-Stop:
-docker compose down
+---
 
-## Project Structure
-- src/ - source code
-- scripts/ - helper scripts
-- pcaps/ - packet captures
-- docs/ - reports
+## ⚙️ Quick Start (Required)
 
-## Project Board
-https://github.com/2handzxd/cecs478-hardened-echo-server/projects
+From a fresh clone:
+
+```bash
+make up && make demo
