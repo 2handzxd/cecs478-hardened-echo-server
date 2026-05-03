@@ -19,3 +19,6 @@ test:
 
 down:
 	docker compose down
+clean:
+	docker compose down -v --remove-orphans
+	rm -rf artifacts/release/*
